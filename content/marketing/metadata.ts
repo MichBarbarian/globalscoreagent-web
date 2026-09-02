@@ -145,7 +145,7 @@ function localizedPageUrl(canonical: string, lang: SeoLang): string {
 }
 
 export function buildRouteMetadata(route: RouteMetadataKey, lang: SeoLang = 'en'): Metadata {
-  const { title, description, canonical, ogPath, keywords } = routeMetadata[route];
+  const { title, description, canonical, ogPath, keywords } = routeMetadata[route] as RouteMetaEntry;
   const titleText = pickBilingual(title, lang);
   const descriptionText = pickBilingual(description, lang);
   const ogLocale = lang === 'en' ? 'en_US' : 'es_ES';
