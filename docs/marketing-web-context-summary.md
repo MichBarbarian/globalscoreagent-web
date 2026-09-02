@@ -1,7 +1,7 @@
 # Resumen de Contexto del Proyecto — Web pública (Marketing)
 
 Documento de handoff para continuar el desarrollo de la **web oficial** en un chat nuevo de Cursor.  
-**Última actualización:** septiembre 2026 — Walcert sync (x402 BNB + GoldRush + Aigora + SEO/JSON-LD) + link **GSA Insights** en sidebar marketing (`/insights`).
+**Última actualización:** septiembre 2026 — repo canónico **MichBarbarian/globalscoreagent-web**, Vercel Web Analytics, Walcert sync + nav Insights.
 
 Complementa [`docs/dashboard-context-summary.md`](dashboard-context-summary.md) (panel autenticado) y [`docs/AGENT-RULES.md`](AGENT-RULES.md) (reglas globales).
 
@@ -11,11 +11,18 @@ Complementa [`docs/dashboard-context-summary.md`](dashboard-context-summary.md) 
 
 | Aspecto | Detalle |
 |---------|---------|
+| **Repo canónico** | [MichBarbarian/globalscoreagent-web](https://github.com/MichBarbarian/globalscoreagent-web) (mirror; cuenta `GlobalScoreAgent` flageada) |
 | **Rama de producción** | `main` (integración marketing + dashboard, merge `aff1172`) |
 | **URL canónica** | `https://www.globalscoreagent.com` (Vercel; apex → `www`) |
 | **Site URL SEO** | `https://globalscoreagent.com` (`lib/seo/site.ts`, metadataBase) |
-| **Deploy** | Vercel — auto-deploy desde `main` |
+| **Deploy** | Vercel proyecto `globalscoreagent-web` (team `global-score-agent`) — prod vía CLI/`main` cuando Git esté reconectado a MichBarbarian |
+| **Analytics** | `@vercel/analytics` en `app/layout.tsx` (`<Analytics />`) |
 | **Versión** | **v1** — landing, HUMI/WAMI, **Walcert**, **Public API Free Tier**, **About/Nosotros**, pricing, docs, agentes públicos, Top 10 |
+
+### Cambios recientes (septiembre 2026 — repo + Analytics)
+
+- **Repo:** canónico en MichBarbarian (mismo patrón que `walcert-agent` / `gsa-workers`). Legacy: `GlobalScoreAgent/globalscoreagent-web`.
+- **Vercel Web Analytics:** paquete `@vercel/analytics` montado en el root layout. Confirmar Web Analytics ON en el dashboard del proyecto.
 
 ### Cambios recientes (agosto 2026)
 

@@ -2,6 +2,8 @@
 
 Este repositorio aloja **dos productos** en un solo monorepo Next.js.
 
+**Repo canónico (sep 2026):** [MichBarbarian/globalscoreagent-web](https://github.com/MichBarbarian/globalscoreagent-web). El mirror bajo `GlobalScoreAgent/` quedó atrás por la cuenta flageada.
+
 ## Ramas (julio 2026)
 
 | Rama | Propósito | Estado |

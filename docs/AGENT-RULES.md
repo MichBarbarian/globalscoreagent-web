@@ -3,7 +3,7 @@
 Documento maestro de convenciones, arquitectura y estado del proyecto.  
 Úsalo al **iniciar cualquier chat nuevo** antes de implementar cambios.
 
-**Última revisión:** septiembre 2026 — Walcert sync (BNB/GoldRush/Aigora/SEO) + nav Insights en sidebar.
+**Última revisión:** septiembre 2026 — repo canónico MichBarbarian/globalscoreagent-web + Vercel Analytics; Walcert sync + nav Insights.
 
 **Documentos complementarios (leer según la tarea):**
 

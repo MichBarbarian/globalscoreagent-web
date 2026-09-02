@@ -9,9 +9,10 @@ Documento de handoff para continuar el desarrollo del dashboard en un chat nuevo
 
 | Aspecto | Detalle |
 |---------|---------|
-| **Rama de producción** | `main` (auto-deploy Vercel) |
+| **Repo canónico** | [MichBarbarian/globalscoreagent-web](https://github.com/MichBarbarian/globalscoreagent-web) |
+| **Rama de producción** | `main` |
 | **URL pública** | `https://www.globalscoreagent.com` (apex → `www`) |
-| **Deploy** | Vercel desde `main` |
+| **Deploy** | Vercel proyecto `globalscoreagent-web` (team `global-score-agent`) |
 | **Auth** | Supabase OAuth (Google/GitHub) + email/password; callback `/auth/callback` |
 | **Acceso dashboard** | `/dashboard/*` — login + suscripción activa |
 | **Versión** | **v1** — overview, directorio, detalle agente, HUMI/WAMI, **Walcert** (preview + verify + ejemplos), perfil, suscripciones, feedbacks, responsive móvil |
