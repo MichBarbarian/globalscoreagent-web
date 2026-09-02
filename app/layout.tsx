@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { LanguageProvider } from './contexts/LanguageContext';
 import AppShell from './components/AppShell';
@@ -45,6 +46,7 @@ export default function RootLayout({
         <LanguageProvider>
           <AppShell>{children}</AppShell>
         </LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
