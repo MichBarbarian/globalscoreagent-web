@@ -40,6 +40,8 @@
 Editorial analysis and indexed on-chain data about the ERC-8004 agent ecosystem (identity, reputation, validation registries).
 
 - Insights hub: https://insights.globalscoreagent.com
+- On-chain identity vs off-chain information (Aug 24, 2026): https://insights.globalscoreagent.com/erc-8004-on-chain-card-vs-uri
+  - ES: https://insights.globalscoreagent.com/erc-8004-on-chain-card-vs-uri?lang=es
 - Eight months of ERC-8004 on mainnet (Aug 2026): https://insights.globalscoreagent.com/erc-8004-eight-months-on-mainnet
   - ES: https://insights.globalscoreagent.com/erc-8004-eight-months-on-mainnet?lang=es
 

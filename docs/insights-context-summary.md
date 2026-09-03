@@ -1,7 +1,7 @@
 # Resumen de contexto — GSA Insights
 
 Handoff para continuar el **blog de análisis ERC-8004** en un chat nuevo.  
-**Última actualización:** 2 septiembre 2026 — link Insights en sidebar marketing (`/insights`, ambiente-aware).
+**Última actualización:** 3 septiembre 2026 — pieza #2 `erc-8004-on-chain-card-vs-uri` publicada.
 
 Complementa [`docs/marketing-web-context-summary.md`](marketing-web-context-summary.md) (web pública) y [`docs/AGENT-RULES.md`](AGENT-RULES.md).
 
@@ -16,9 +16,10 @@ Complementa [`docs/marketing-web-context-summary.md`](marketing-web-context-summ
 | **Canónica (live)** | `https://insights.globalscoreagent.com` |
 | Redirect 301 | `www` / apex `/insights` y `/insights/*` → subdominio (paths limpios: `/slug`) |
 | Pieza 1 | `https://insights.globalscoreagent.com/erc-8004-eight-months-on-mainnet` |
+| Pieza 2 | `https://insights.globalscoreagent.com/erc-8004-on-chain-card-vs-uri` |
 | Nav marketing | Sidebar → `GSA Insights` → `/insights` (local/preview); en www/apex prod el middleware hace 301 al subdominio |
 
-**Vault:** [[04 - Growth/Insights]] · ADR [[08 - Decisiones/2026-08-18 - Insights propio origen de análisis ERC-8004]]  
+**Vault:** [[04 - Growth/Insights]] · ADR origen [[08 - Decisiones/2026-08-18 - Insights propio origen de análisis ERC-8004]] · ADR pieza 2 [[08 - Decisiones/2026-09-03 - Publicar Insights pieza 2 on-chain card vs URI]]  
 **Pipeline:** Data Insights (brief EN) → editorial ES/EN → repo MD → redes (`shared_on.blog`).
 
 ---
@@ -61,7 +62,9 @@ La confusión habitual: el brief **landscape** y la ficha **blog** tratan el mis
 
 - **Keywords** ERC-8004 en metadata índice y artículos (`lib/insights/seo-keywords.ts`).
 - **JSON-LD:** `Blog` en índice; `BlogPosting` + `BreadcrumbList` en artículos.
-- **Open Graph / Twitter** con cover `public/blog/nota_1.png` en la primera pieza.
+- **Open Graph / Twitter** con cover `public/blog/nota_1.png` (pieza 1, masa vs red) y `public/blog/nota_2.png` (pieza 2, placa de identidad vs dossier URI).
+- Cover en artículo: wrapper `aspect-[16/9] min-h-[12rem]` en `InsightsArticleClient` (el `<img>` solo con `aspect` puede leerse como recuadro vacío).
+- Cada pieza necesita un concepto visual **distinto** (no reciclar la grieta/esferas de la #1).
 - **hreflang** EN default + `?lang=es`.
 - **robots** index/follow explícito.
 - **Canonical por host:** `insightsCanonicalUrl()` usa el subdominio si `Host` es `insights.*`; en www sigue `/insights/...`.
@@ -98,7 +101,8 @@ Header sticky en artículos:
 5. Fila en `04 - Growth/blog/Índice.md`.
 6. Marcar `shared_on.blog` en el brief de Data Insights.
 7. Actualizar `public/llms-full.txt` si es pieza destacada.
-8. Opcional: nota en `13 - Novedades del Producto/` si se comunica como product update.
+8. Cover propio en `public/blog/` + `coverImage` en manifiesto (concepto distinto a piezas anteriores; wrapper de artículo con `min-h`).
+9. ADR en `08 - Decisiones/` + nota en `13 - Novedades del Producto/` si se comunica como product update.
 
 ---
 

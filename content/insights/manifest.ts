@@ -18,6 +18,48 @@ export type InsightsManifestEntry = {
 
 export const insightsManifest: InsightsManifestEntry[] = [
   {
+    slug: 'erc-8004-on-chain-card-vs-uri',
+    date: '2026-08-24',
+    status: 'published',
+    tags: ['metadata', 'chains'],
+    readingMinutes: 8,
+    title: {
+      es: 'Identidad on-chain vs. información off-chain',
+      en: 'On-chain identity vs off-chain information',
+    },
+    description: {
+      es: 'Todo agente tiene un nombre on-chain. Solo el 46,5% tiene una description usable. La card legible suele vivir en el archivo URI.',
+      en: 'Every agent has an on-chain name. Only 46.5% have a usable description. The readable card usually lives in the URI file.',
+    },
+    coverImage: '/blog/nota_2.png',
+    coverImageAlt: {
+      es: 'Ilustración: una placa de identidad dorada casi vacía unida por un hilo a un dossier abierto — el nombre on-chain y la card que vive en el archivo URI.',
+      en: 'Illustration: a nearly blank gold identity plaque joined by a thread to an open dossier — the on-chain name and the card that lives in the URI file.',
+    },
+    seoKeywords: {
+      en: [
+        'ERC-8004 agentURI',
+        'ERC-8004 identity registry',
+        'on-chain agent card',
+        'off-chain agent metadata',
+        'ERC-8004 agent metadata',
+        'agent identity URI',
+        'ERC-8004 registration file',
+        'on-chain vs off-chain identity',
+      ],
+      es: [
+        'agentURI ERC-8004',
+        'registro de identidad ERC-8004',
+        'agent card on-chain',
+        'metadata off-chain de agentes',
+        'metadata agentes ERC-8004',
+        'URI de identidad de agente',
+        'archivo de registro ERC-8004',
+        'identidad on-chain vs off-chain',
+      ],
+    },
+  },
+  {
     slug: 'erc-8004-eight-months-on-mainnet',
     date: '2026-08-19',
     status: 'published',

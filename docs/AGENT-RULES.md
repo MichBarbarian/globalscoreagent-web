@@ -3,7 +3,7 @@
 Documento maestro de convenciones, arquitectura y estado del proyecto.  
 Úsalo al **iniciar cualquier chat nuevo** antes de implementar cambios.
 
-**Última revisión:** septiembre 2026 — repo canónico MichBarbarian/globalscoreagent-web + Vercel Analytics; Walcert sync + nav Insights.
+**Última revisión:** septiembre 2026 — Insights pieza #2 `erc-8004-on-chain-card-vs-uri` en `main`.
 
 **Documentos complementarios (leer según la tarea):**
 
@@ -297,7 +297,8 @@ Si una regla de Cursor y este doc difieren, **priorizar la conversación actual 
 - Detalle HUMI (Fase 2, ago 2026): `fetchAgentHumiIndex` → `web_dashboard.index_humi_live`. Directorio sigue en escalares de `agents`. DROP tabla-copia = Fase 3 (otra ADR).
 - Walcert marketing (sep 2026): identidad 5 registros + marketplaces (Agent.family, Agent City, CDP Bazaar, Aigora) + x402 Celo/Base/BNB + GoldRush Multichain; repo `MichBarbarian/walcert-agent`; SEO JSON-LD + `#agent-facts`.
 - Sidebar marketing: link **GSA Insights** → `/insights` (ambiente-aware; 301 a subdominio solo en www/apex prod).
+- Insights pieza #2 (sep 2026): `erc-8004-on-chain-card-vs-uri` — on-chain card vs `agentURI`; cover `public/blog/nota_2.png`; featured por fecha.
 
 ---
 
-*Última revisión: septiembre 2026 — Walcert sync + nav Insights. Actualizar cuando cambien migraciones BD, grants, ramas o convenciones.*
+*Última revisión: septiembre 2026 — Insights pieza 2. Actualizar cuando cambien migraciones BD, grants, ramas o convenciones.*

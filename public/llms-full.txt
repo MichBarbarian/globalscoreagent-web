@@ -19,6 +19,9 @@ Hub: https://globalscoreagent.com/docs/global-score-agent
 
 Hub: https://insights.globalscoreagent.com
 
+- erc-8004-on-chain-card-vs-uri — On-chain identity vs off-chain information: usable cards on the registry vs agentURI vs feedback (Aug 24, 2026 snapshot)
+  - EN: https://insights.globalscoreagent.com/erc-8004-on-chain-card-vs-uri
+  - ES: https://insights.globalscoreagent.com/erc-8004-on-chain-card-vs-uri?lang=es
 - erc-8004-eight-months-on-mainnet — Eight months of ERC-8004 on mainnet: identity vs reputation adoption, chains, registries (Aug 19, 2026 snapshot)
   - EN: https://insights.globalscoreagent.com/erc-8004-eight-months-on-mainnet
   - ES: https://insights.globalscoreagent.com/erc-8004-eight-months-on-mainnet?lang=es

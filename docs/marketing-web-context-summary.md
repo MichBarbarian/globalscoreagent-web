@@ -1,7 +1,7 @@
 # Resumen de Contexto del Proyecto — Web pública (Marketing)
 
 Documento de handoff para continuar el desarrollo de la **web oficial** en un chat nuevo de Cursor.  
-**Última actualización:** septiembre 2026 — repo canónico **MichBarbarian/globalscoreagent-web**, Vercel Web Analytics, Walcert sync + nav Insights.
+**Última actualización:** septiembre 2026 — Insights pieza #2 (`erc-8004-on-chain-card-vs-uri`) + nav Insights.
 
 Complementa [`docs/dashboard-context-summary.md`](dashboard-context-summary.md) (panel autenticado) y [`docs/AGENT-RULES.md`](AGENT-RULES.md) (reglas globales).
 
@@ -29,6 +29,10 @@ Complementa [`docs/dashboard-context-summary.md`](dashboard-context-summary.md) 
 - **Walcert (`/walcert` + `/walcert/developers`):** identidad on-chain de **cinco registros** — Celo 9699 · Base 59768 · Eth 50032 · BNB 265982 · Concordium #1686. Presencia: Virtuals ACP, Agent.family (TermiX), Agent City, CDP Bazaar / agentic.market, **Aigora (Celo, mismo 9699)**, Concordium. Logos: `public/agent-family-logo.png`, `agent-city-logo.png`, `agentic-market-logo.png`, **`aigora_market.jpg`** (+ Virtuals/Concordium). x402 **triple** $0.05 USDC en Celo, Base y **BNB** (Permit2 + recibo NFT soulbound en BSC; anclaje `giveFeedback` sigue en Celo). Multichain público = **GoldRush** `multichain-v2.1` (no Moralis). Repo público: `MichBarbarian/walcert-agent`. SEO: keywords + JSON-LD (`SoftwareApplication` / `WebAPI` / TechArticle developers) + sección `#agent-facts` + `llms.txt`. Developers: tools ERC-8257 (Base 485–488 · Eth 163–166) + listings + doc BNB. Copy: `content/walcert/`. **No** afirmar featured en Bazaar ni DappBay/Bankr live. Dashboard `/dashboard/walcert` sin cambio en este corte. Identidad canónica de emisión: Celo **9699**. `GET https://walcert.globalscoreagent.com/` = **agent card JSON** (no UI humana).
 - **HUMI perfil público:** `/agents/[id]/humi` y `GET /api/web-page/agents/[id]/humi` leen `web_dashboard.index_humi_live` (mismo `fetchAgentHumiIndex` que el dashboard). El directorio sigue en escalares de `agents`.
 - **About / Nosotros (`/about`):** página bilingüe con producto, founder card (Ibzan Jair Valenzuela Suarez + LinkedIn/X), reconocimiento unificado hackathon ETH UY + pitch BSG 2026 (GlassCard elevated, lightbox de imágenes, links GitHub / Blockchain Summit / DoraHacks). Nav + footer. Se eliminó el redirect legacy `/about` → `/#mission` en `next.config.js`. Copy: `content/about/`. Assets: `public/hackaton_eth_2026.jpg`, `hackaton_eth_2026_2.jpg`, `hackaton_2026_premiacion.jpg`, `blockchain_summit_2026.png`.
+
+### Cambios recientes (septiembre 2026 — Insights pieza 2)
+
+- **Pieza #2:** `https://insights.globalscoreagent.com/erc-8004-on-chain-card-vs-uri` (EN default; `?lang=es`). Snapshot Identity 24 ago 2026 (441.794 agentes): card usable on-chain vs archivo `agentURI`. Cover `public/blog/nota_2.png` (placa de identidad vs dossier URI; no reutilizar la grieta/nodos de `nota_1.png`). Featured del hub por fecha. Fuente: brief Data Insights *registration vs URI metadata*.
 
 ### Cambios recientes (septiembre 2026 — nav Insights)
 
@@ -275,4 +279,4 @@ No commits/push salvo petición explícita.
 
 ---
 
-*Última revisión: septiembre 2026 — Walcert x402 BNB + NFT, Multichain GoldRush, Aigora, SEO agent-facts, nav Insights `/insights`. Actualizar tras cambios de pricing, KPIs, rutas públicas o deploy.*
+*Última revisión: septiembre 2026 — Insights pieza 2 on-chain vs URI. Actualizar tras cambios de pricing, KPIs, rutas públicas o deploy.*

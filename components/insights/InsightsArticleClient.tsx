@@ -61,12 +61,12 @@ export default function InsightsArticleClient({
             <span>{formatReadMinutes(post.readingMinutes, language)}</span>
           </div>
           {post.coverImage ? (
-            <div className="mt-8 overflow-hidden rounded-xl border border-white/10">
+            <div className="relative mt-8 aspect-[16/9] min-h-[12rem] overflow-hidden rounded-xl border border-white/10 bg-zinc-900">
               <InsightsCoverImage
                 src={post.coverImage}
                 alt={post.coverImageAlt ?? post.title}
                 priority
-                className="aspect-[16/9] w-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
           ) : null}
